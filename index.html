@@ -10,574 +10,686 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Vasamuseet</title>
   <link rel="icon" type="image/x-icon" href="src/favicon.ico">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style_header.css" />
   <link rel="stylesheet" href="style_mainPage1.css" />
+  <link rel="stylesheet" href="style_footer.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-<header fixed-top>
-        <!--VM-1.2 header aside-->
-        <aside>
-            <div class="container-fluid mt-3">
-                <button class="btn btn-dark border-light rounded-0 button-menu-aside float-end" type="button"
-                    data-bs-toggle="offcanvas" data-bs-target="#demo">
-                    <i class="fa-solid fa-bars"></i>
-                    <br />
-                    MENU
+  <header fixed-top>
+    <!--VM-1.2 header aside-->
+    <aside>
+      <div class="container-fluid mt-3">
+        <button class="btn btn-dark border-light rounded-0 button-menu-aside float-end" type="button"
+          data-bs-toggle="offcanvas" data-bs-target="#demo">
+          <i class="fa-solid fa-bars"></i>
+          <br />
+          MENU
+        </button>
+      </div>
+      <div class="container-fluid">
+        <div class="offcanvas offcanvas-end" id="demo">
+          <div class="offcanvas-header">
+            <button type="button" class="btn btn-light btn-close button-close" data-bs-dismiss="offcanvas"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="form border-bottom border-2">
+              <form class="d-flex form-search">
+                <input class="form-control border-0 search" type="text" placeholder="Sök" />
+                <button class="btn rounded-0" type="button">
+                  <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
+              </form>
             </div>
-            <div class="container-fluid">
-                <div class="offcanvas offcanvas-end" id="demo">
-                    <div class="offcanvas-header">
-                        <button type="button" class="btn btn-light btn-close button-close"
-                            data-bs-dismiss="offcanvas"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <div class="form border-bottom border-2">
-                            <form class="d-flex form-search">
-                                <input class="form-control border-0 search" type="text" placeholder="Sök" />
-                                <button class="btn rounded-0" type="button">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                </button>
-                            </form>
-                        </div>
 
-                        <ul class="side-menu list-group list-group-flush">
-                            <li class="list-group-item list-right">
-                                <div class="visit-link">
-                                    <a href="https://www.vasamuseet.se/besok" class="a-aside">Besök</a>
-                                    <div class="dropdown list-back">
-                                        <button type="button"
-                                            class="btn btn-outline-light rounded-0 dropdown-toggle dropdown-batton"
-                                            data-bs-toggle="dropdown"></button>
-                                        <ul class="dropdown-menu dropdown-side">
-                                            <li class="list-right">
-                                                <a class="dropdown-item a-aside" href="#">Öppettider</a>
-                                            </li>
-                                            <li class="list-right">
-                                                <a class="dropdown-item" href="#">Två museer på en biljett</a>
-                                            </li>
-                                            <li class="list-right">
-                                                <a class="dropdown-item a-aside" href="#">Priser</a>
-                                            </li>
-                                            <li class="list-right">
-                                                <a class="dropdown-item a-aside" href="#">Inför ditt besök</a>
-                                            </li>
-                                            <li class="list-right">
-                                                <a class="dropdown-item a-aside" href="#">Utställningar</a>
-                                            </li>
-                                            <li class="list-right">
-                                                <a class="dropdown-item a-aside" href="#">Barn & familj</a>
-                                            </li>
-                                            <li class="list-right">
-                                                <a class="dropdown-item a-aside" href="#">Restaurang</a>
-                                            </li>
-                                            <li class="list-right">
-                                                <a class="dropdown-item a-aside" href="#">Vasamuseets butik</a>
-                                            </li>
-                                            <li class="list-right">
-                                                <a class="dropdown-item a-aside" href="#">Vasamuseets audioguide</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item list-right">
-                                <div class="visit-link">
-                                    <a class="a-aside" href="https://www.vasamuseet.se/utforska">Utforska</a>
-                                    <div class="dropdown">
-                                        <button type="button" class="btn btn-outline-light rounded-0 dropdown-toggle"
-                                            data-bs-toggle="dropdown"></button>
-                                        <ul class="dropdown-menu">
-                                            <li class="list-right">
-                                                <a class="dropdown-item a-aside" href="#">Vasas historia</a>
-                                            </li>
-                                            <li class="list-right">
-                                                <a class="dropdown-item a-aside" href="#">Samlingar</a>
-                                            </li>
-                                            <li class="list-right">
-                                                <a class="dropdown-item a-aside" href="#">Forskning</a>
-                                            </li>
-                                            <li class="list-right">
-                                                <a class="dropdown-item a-aside" href="#">Vasamuseets podd</a>
-                                            </li>
-                                            <li class="list-right">
-                                                <a class="dropdown-item a-aside" href="#">Film</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item list-right">
-                                <div class="visit-link">
-                                    <a class="a-aside" href="https://www.vasamuseet.se/skola">Skola</a>
-                                    <div class="dropdown">
-                                        <button type="button" class="btn btn-outline-light rounded-0 dropdown-toggle"
-                                            data-bs-toggle="dropdown"></button>
-                                        <ul class="dropdown-menu">
-                                            <li class="list-right">
-                                                <a class="dropdown-item a-aside" href="#">Planera ditt besök</a>
-                                            </li>
-                                            <li class="list-right">
-                                                <a class="dropdown-item a-aside" href="#">Nyhetsbrev för lärare</a>
-                                            </li>
-                                            <li class="list-right">
-                                                <a class="dropdown-item a-aside" href="#">Digitala skolprogram</a>
-                                            </li>
-                                            <li class="list-right">
-                                                <a class="dropdown-item a-aside" href="#">Boka digitala skolprogram</a>
-                                            </li>
-                                            <li class="list-right">
-                                                <a class="dropdown-item a-aside" href="#">Skolprogram</a>
-                                            </li>
-                                            <li class="list-right">
-                                                <a class="dropdown-item a-aside" href="#">Lärarkväll på Vasamuseet</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item list-right">
-                                <div class="visit-link">
-                                    <a class="a-aside" href="https://www.vasamuseet.se/om-vasamuseet">Om Vasamuseet</a>
-                                    <div class="dropdown">
-                                        <button type="button" class="btn btn-outline-light rounded-0 dropdown-toggle"
-                                            data-bs-toggle="dropdown"></button>
-                                        <ul class="dropdown-menu">
-                                            <li class="list-right">
-                                                <a class="dropdown-item a-aside" href="#">Lärarkväll på Vasamuseet</a>
-                                            </li>
-                                            <li class="list-right">
-                                                <a class="dropdown-item a-aside" href="#">Pressrum</a>
-                                            </li>
-                                            <li class="list-right">
-                                                <a class="dropdown-item a-aside" href="#">Vasamuseets vänner</a>
-                                            </li>
-                                            <li class="list-right">
-                                                <a class="dropdown-item a-aside" href="#">Boka kvällsevenemang</a>
-                                            </li>
-                                            <li class="list-right">
-                                                <a class="dropdown-item a-aside" href="#">Lediga jobb</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+            <ul class="side-menu list-group list-group-flush">
+              <li class="list-group-item list-right">
+                <div class="visit-link">
+                  <a href="https://www.vasamuseet.se/besok" class="a-aside">Besök</a>
+                  <div class="dropdown list-back">
+                    <button type="button" class="btn btn-outline-light rounded-0 dropdown-toggle dropdown-batton"
+                      data-bs-toggle="dropdown"></button>
+                    <ul class="dropdown-menu dropdown-side">
+                      <li class="list-right">
+                        <a class="dropdown-item a-aside" href="#">Öppettider</a>
+                      </li>
+                      <li class="list-right">
+                        <a class="dropdown-item" href="#">Två museer på en biljett</a>
+                      </li>
+                      <li class="list-right">
+                        <a class="dropdown-item a-aside" href="#">Priser</a>
+                      </li>
+                      <li class="list-right">
+                        <a class="dropdown-item a-aside" href="#">Inför ditt besök</a>
+                      </li>
+                      <li class="list-right">
+                        <a class="dropdown-item a-aside" href="#">Utställningar</a>
+                      </li>
+                      <li class="list-right">
+                        <a class="dropdown-item a-aside" href="#">Barn & familj</a>
+                      </li>
+                      <li class="list-right">
+                        <a class="dropdown-item a-aside" href="#">Restaurang</a>
+                      </li>
+                      <li class="list-right">
+                        <a class="dropdown-item a-aside" href="#">Vasamuseets butik</a>
+                      </li>
+                      <li class="list-right">
+                        <a class="dropdown-item a-aside" href="#">Vasamuseets audioguide</a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-            </div>
-        </aside>
-
-        <!--VM-1.1 header top-->
-        <div class="container container-fluid navbar navbar-expand-lg container__main">
-            <a class="navbar-brand link-logo logo__margin" href="index.html">
-                <img class="logo-img logo__picture" src="src/vasamuseet-logotyp.png" alt="logotyp" />
-            </a>
-            <div class="container container__flex">
-                <nav class="navbar navbar-expand-lg navbar-light navbar-first__hide">
-                    <ul class="navbar-nav justify-content-center wrraper">
-                        <li class="access-link d-flex elem-pad">
-                            <span class="align-self-center"><i class="far fa-comments icon-color"></i></span>
-                            <a class="nav-link nav-link__color size align-self-center" href="#">Lättläst</a>
-                        </li>
-                        <li class="access-link d-flex elem-pad">
-                            <span class="align-self-center"><i class="fa fa-sign-language icon-color"></i></span>
-                            <a class="nav-link nav-link__color size align-self-center" href="#">Teckenspråk</a>
-                        </li>
-                        <li class="access-link d-flex elem-pad">
-                            <span class="glyphicon glyphicon-volume-up icon-color align-self-center"></span>
-                            <a class="nav-link nav-link__color size align-self-center" href="#">Talande webb</a>
-                        </li>
-                        <li class="access-link nav-item dropdown d-flex elem-pad">
-                            <span class="glyphicon glyphicon-globe icon-color align-self-center"></span>
-                            <a class="nav-link dropdown-toggle nav-link__color size align-self-center" href="#"
-                                id="navbarDarkDropdownMenuLink" role="button" data-toggle="dropdown"
-                                aria-expanded="false">Choose language
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li class="dropdown-item">Svenska</li>
-                                <li class="dropdown-item">English</li>
-                                <li class="dropdown-item">Ceština</li>
-                                <li class="dropdown-item">Dansk</li>
-                                <li class="dropdown-item">Davvisamigiella</li>
-                                <li class="dropdown-item">Deutsch</li>
-                            </ul>
-                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li class="dropdown-item">Eesti</li>
-                                <li class="dropdown-item">Español</li>
-                                <li class="dropdown-item">Français</li>
-                                <li class="dropdown-item">Íslenska</li>
-                                <li class="dropdown-item">Italiano</li>
-                                <li class="dropdown-item">Jiddisch</li>
-                            </ul>
-                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li class="dropdown-item">Latvijas</li>
-                                <li class="dropdown-item">Lietuvos</li>
-                                <li class="dropdown-item">Magyar</li>
-                                <li class="dropdown-item">Malti</li>
-                                <li class="dropdown-item">Meänkieli</li>
-                                <li class="dropdown-item">Nederlands</li>
-                            </ul>
-                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li class="dropdown-item">Norsk</li>
-                                <li class="dropdown-item">Polski</li>
-                                <li class="dropdown-item">Português</li>
-                                <li class="dropdown-item">Română</li>
-                                <li class="dropdown-item">Romani</li>
-                                <li class="dropdown-item">Shqip</li>
-                            </ul>
-                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li class="dropdown-item">Slovenčina</li>
-                                <li class="dropdown-item">Soomaali</li>
-                                <li class="dropdown-item">Suomi</li>
-                                <li class="dropdown-item">Türkçe</li>
-                                <li class="dropdown-item">Ελληνικά</li>
-                                <li class="dropdown-item">русский (Russian)</li>
-                            </ul>
-                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li class="dropdown-item">українська (Ukrainian)</li>
-                                <li class="dropdown-item">עברית</li>
-                                <li class="dropdown-item">العربية(Arabic)</li>
-                                <li class="dropdown-item">فارسى (Farsi)</li>
-                                <li class="dropdown-item">كوردی (Sorani)</li>
-                                <li class="dropdown-item">ภาษาไทย (Thai)</li>
-                            </ul>
-                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li class="dropdown-item">한국어 (Korean)</li>
-                                <li class="dropdown-item">עברית</li>
-                                <li class="dropdown-item">中文(简体)</li>
-                                <li class="dropdown-item">日本語 (Japanese)</li>
-                            </ul>
-                        </li>
+              </li>
+              <li class="list-group-item list-right">
+                <div class="visit-link">
+                  <a class="a-aside" href="https://www.vasamuseet.se/utforska">Utforska</a>
+                  <div class="dropdown">
+                    <button type="button" class="btn btn-outline-light rounded-0 dropdown-toggle"
+                      data-bs-toggle="dropdown"></button>
+                    <ul class="dropdown-menu">
+                      <li class="list-right">
+                        <a class="dropdown-item a-aside" href="#">Vasas historia</a>
+                      </li>
+                      <li class="list-right">
+                        <a class="dropdown-item a-aside" href="#">Samlingar</a>
+                      </li>
+                      <li class="list-right">
+                        <a class="dropdown-item a-aside" href="#">Forskning</a>
+                      </li>
+                      <li class="list-right">
+                        <a class="dropdown-item a-aside" href="#">Vasamuseets podd</a>
+                      </li>
+                      <li class="list-right">
+                        <a class="dropdown-item a-aside" href="#">Film</a>
+                      </li>
                     </ul>
-                </nav>
-                <nav class="justify-content-center">
-                    <ul class="navbar-nav nav-small">
-                        <li class="nav-item">
-                            <a class="nav-link nav-link__color" href="#">Besök</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav-link__color" href="#">Utforska</a>
-                        </li>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item list-right">
+                <div class="visit-link">
+                  <a class="a-aside" href="https://www.vasamuseet.se/skola">Skola</a>
+                  <div class="dropdown">
+                    <button type="button" class="btn btn-outline-light rounded-0 dropdown-toggle"
+                      data-bs-toggle="dropdown"></button>
+                    <ul class="dropdown-menu">
+                      <li class="list-right">
+                        <a class="dropdown-item a-aside" href="#">Planera ditt besök</a>
+                      </li>
+                      <li class="list-right">
+                        <a class="dropdown-item a-aside" href="#">Nyhetsbrev för lärare</a>
+                      </li>
+                      <li class="list-right">
+                        <a class="dropdown-item a-aside" href="#">Digitala skolprogram</a>
+                      </li>
+                      <li class="list-right">
+                        <a class="dropdown-item a-aside" href="#">Boka digitala skolprogram</a>
+                      </li>
+                      <li class="list-right">
+                        <a class="dropdown-item a-aside" href="#">Skolprogram</a>
+                      </li>
+                      <li class="list-right">
+                        <a class="dropdown-item a-aside" href="#">Lärarkväll på Vasamuseet</a>
+                      </li>
                     </ul>
-                </nav>
-            </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item list-right">
+                <div class="visit-link">
+                  <a class="a-aside" href="https://www.vasamuseet.se/om-vasamuseet">Om Vasamuseet</a>
+                  <div class="dropdown">
+                    <button type="button" class="btn btn-outline-light rounded-0 dropdown-toggle"
+                      data-bs-toggle="dropdown"></button>
+                    <ul class="dropdown-menu">
+                      <li class="list-right">
+                        <a class="dropdown-item a-aside" href="#">Lärarkväll på Vasamuseet</a>
+                      </li>
+                      <li class="list-right">
+                        <a class="dropdown-item a-aside" href="#">Pressrum</a>
+                      </li>
+                      <li class="list-right">
+                        <a class="dropdown-item a-aside" href="#">Vasamuseets vänner</a>
+                      </li>
+                      <li class="list-right">
+                        <a class="dropdown-item a-aside" href="#">Boka kvällsevenemang</a>
+                      </li>
+                      <li class="list-right">
+                        <a class="dropdown-item a-aside" href="#">Lediga jobb</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-    </header>
-    
-    <main>
-      <!--VM-1.3 Main title-->
-      <section class="img-main">
-        <div class="container-main">
-          <img class="imgM"
-            src="https://www.vasamuseet.se/globalassets/vasamuseet/bilder/museet/vasamuseet-var-blommor.jpg?w=1400"
-            alt="Vasamuseet">
-        </div>
-        <div class="text-main">
-          Välkommen till Vasamuseet
-        </div>
-        <div class="gradient"></div>
+      </div>
+    </aside>
 
-        <a href="#T-5-7">
-          <button class="butt-I">
-            &#709;
-          </button>
-        </a>
-      </section>
-      <!--VM-1.4 Main Öppettider/Priser-->
-      <section class="grey padding">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6 align-items-center  padding1">
-              <h1 class="header-main"><i class="fa fa-calendar"></i> Öppettider</h1><br>
-              <div>
-                <span class="f-size">Dagligen juni-augusti:</span>
-                <span class="f-size text-rigth">kl. 8.30-18</span>
-              </div>
-              <br>
-              <div>
-                <span class="f-size">Stängt:</span>
-                <span class="f-size text-rigth">24, 25 december</span>
-              </div>
+    <!--VM-1.1 header top-->
+    <div class="container container-fluid navbar navbar-expand-lg container__main">
+      <a class="navbar-brand link-logo logo__margin" href="index.html">
+        <img class="logo-img logo__picture" src="src/vasamuseet-logotyp.png" alt="logotyp" />
+      </a>
+      <div class="container container__flex">
+        <nav class="navbar navbar-expand-lg navbar-light navbar-first__hide">
+          <ul class="navbar-nav justify-content-center wrraper">
+            <li class="access-link d-flex elem-pad">
+              <span class="align-self-center"><i class="far fa-comments icon-color"></i></span>
+              <a class="nav-link nav-link__color size align-self-center" href="#">Lättläst</a>
+            </li>
+            <li class="access-link d-flex elem-pad">
+              <span class="align-self-center"><i class="fa fa-sign-language icon-color"></i></span>
+              <a class="nav-link nav-link__color size align-self-center" href="#">Teckenspråk</a>
+            </li>
+            <li class="access-link d-flex elem-pad">
+              <span class="glyphicon glyphicon-volume-up icon-color align-self-center"></span>
+              <a class="nav-link nav-link__color size align-self-center" href="#">Talande webb</a>
+            </li>
+            <li class="access-link nav-item dropdown d-flex elem-pad">
+              <span class="glyphicon glyphicon-globe icon-color align-self-center"></span>
+              <a class="nav-link dropdown-toggle nav-link__color size align-self-center" href="#"
+                id="navbarDarkDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">Choose
+                language
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li class="dropdown-item">Svenska</li>
+                <li class="dropdown-item">English</li>
+                <li class="dropdown-item">Ceština</li>
+                <li class="dropdown-item">Dansk</li>
+                <li class="dropdown-item">Davvisamigiella</li>
+                <li class="dropdown-item">Deutsch</li>
+              </ul>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li class="dropdown-item">Eesti</li>
+                <li class="dropdown-item">Español</li>
+                <li class="dropdown-item">Français</li>
+                <li class="dropdown-item">Íslenska</li>
+                <li class="dropdown-item">Italiano</li>
+                <li class="dropdown-item">Jiddisch</li>
+              </ul>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li class="dropdown-item">Latvijas</li>
+                <li class="dropdown-item">Lietuvos</li>
+                <li class="dropdown-item">Magyar</li>
+                <li class="dropdown-item">Malti</li>
+                <li class="dropdown-item">Meänkieli</li>
+                <li class="dropdown-item">Nederlands</li>
+              </ul>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li class="dropdown-item">Norsk</li>
+                <li class="dropdown-item">Polski</li>
+                <li class="dropdown-item">Português</li>
+                <li class="dropdown-item">Română</li>
+                <li class="dropdown-item">Romani</li>
+                <li class="dropdown-item">Shqip</li>
+              </ul>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li class="dropdown-item">Slovenčina</li>
+                <li class="dropdown-item">Soomaali</li>
+                <li class="dropdown-item">Suomi</li>
+                <li class="dropdown-item">Türkçe</li>
+                <li class="dropdown-item">Ελληνικά</li>
+                <li class="dropdown-item">русский (Russian)</li>
+              </ul>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li class="dropdown-item">українська (Ukrainian)</li>
+                <li class="dropdown-item">עברית</li>
+                <li class="dropdown-item">العربية(Arabic)</li>
+                <li class="dropdown-item">فارسى (Farsi)</li>
+                <li class="dropdown-item">كوردی (Sorani)</li>
+                <li class="dropdown-item">ภาษาไทย (Thai)</li>
+              </ul>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li class="dropdown-item">한국어 (Korean)</li>
+                <li class="dropdown-item">עברית</li>
+                <li class="dropdown-item">中文(简体)</li>
+                <li class="dropdown-item">日本語 (Japanese)</li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <nav class="justify-content-center">
+          <ul class="navbar-nav nav-small">
+            <li class="nav-item">
+              <a class="nav-link nav-link__color" href="#">Besök</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link__color" href="#">Utforska</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!--VM-1.3 Main title-->
+    <section class="img-main">
+      <div class="container-main">
+        <img class="imgM"
+          src="https://www.vasamuseet.se/globalassets/vasamuseet/bilder/museet/vasamuseet-var-blommor.jpg?w=1400"
+          alt="Vasamuseet">
+      </div>
+      <div class="text-main">
+        Välkommen till Vasamuseet
+      </div>
+      <div class="gradient"></div>
+
+      <a href="#T-5-7">
+        <button class="butt-I">
+          &#709;
+        </button>
+      </a>
+    </section>
+    <!--VM-1.4 Main Öppettider/Priser-->
+    <section class="grey padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 align-items-center  padding1">
+            <h1 class="header-main"><i class="fa fa-calendar"></i> Öppettider</h1><br>
+            <div>
+              <span class="f-size">Dagligen juni-augusti:</span>
+              <span class="f-size text-rigth">kl. 8.30-18</span>
             </div>
-            <div class="col-sm-6 align-items-center  padding1" id="bord-left">
-              <h1 class="header-main"><i class="fa fa-tags"></i> Priser</h1><br>
-              <div>
-                <span class="f-size">Maj-september:</span>
-                <span class="f-size text-rigth">190 kr</span>
-              </div>
-              <br>
-              <div>
-                <span class="f-size">Upp till och med 18 år:</span>
-                <span class="f-size text-rigth">Fri entré</span>
-              </div>
+            <br>
+            <div>
+              <span class="f-size">Stängt:</span>
+              <span class="f-size text-rigth">24, 25 december</span>
+            </div>
+          </div>
+          <div class="col-sm-6 align-items-center  padding1" id="bord-left">
+            <h1 class="header-main"><i class="fa fa-tags"></i> Priser</h1><br>
+            <div>
+              <span class="f-size">Maj-september:</span>
+              <span class="f-size text-rigth">190 kr</span>
+            </div>
+            <br>
+            <div>
+              <span class="f-size">Upp till och med 18 år:</span>
+              <span class="f-size text-rigth">Fri entré</span>
             </div>
           </div>
         </div>
-      </section>
-
-      <!--VM-1.5 Main Nav-->
-      <nav class="MainNav col-sm-12">
-        <a class="aMainNav text-uppercase" href="https://www.vasamuseet.se/besok/audioguide" target="_self">
-          <i class="fa fa-headphones" style="font-size:36px"></i>
-          <p>Audioguide</p>
-        </a>
-        <a class="aMainNav text-uppercase" href="https://www.vasamuseet.se/utforska/film" target="_blank">
-          <i class="fa fa-film" style="font-size:36px"></i>
-          <p>Film</p>
-        </a>
-        <a class="aMainNav text-uppercase" href="https://www.vasamuseet.se/utforska/vasamuseets-podd" target="_self">
-          <i class="fa fa-headphones" style="font-size:36px"></i>
-          <p>Podd</p>
-        </a>
-        <a class="aMainNav text-uppercase" href="https://www.vasamuseet.se/utforska/samlingar/sok-i-samlingen"
-          target="_blank">
-          <i class="fa fa-search" style="font-size:36px"></i>
-          <p>Sok i samlingen</p>
-        </a>
-      </nav>
-
-      <!--VM-1.6 Main articles-->
-      <div class="row gx-0">
-        <article class="col-sm-12 col-lg-6 noPading articleMain">
-          <a class="aArticle center" href="https://www.vasamuseet.se/besok" target="_self">
-            <div>
-              <h3><i class="fa fa-long-arrow-right"></i> Besök Vasamuseet</h3>
-              <p class="text-secondary">Här hittar du allt du behöver veta inför och under ditt besök på
-                Vasamuseet.
-                Vasamuseet har öppet
-                alla
-                dagar kl.8.30-18. Biljetten köpper du i entrén.</p>
-              <b class="text-secondary">Varmt välkommen till Vasamuseet!</b>
-            </div>
-          </a>
-          <img class="imgArticle"
-            src="https://www.vasamuseet.se/globalassets/vasamuseet/bilder/besok/barn-och-familj/mork-bild-pa-vasa-spokskeppet.jpg?w=1200">
-        </article>
-        <article class="col-sm-12 col-lg-6 noPading articleMain">
-          <a class="aArticle center" href="https://www.vasamuseet.se/besok/two-museums-one-ticket" target="_self">
-            <div>
-              <h3><i class="fa fa-long-arrow-right"></i> Två museer på en biljett</h3>
-              <p class="text-secondary">I sommar kan du som besöker Vasamuseet också besöka Vrak med vår nya
-                bilijett för 290 kronor.</p>
-            </div>
-          </a>
-          <img class="imgArticle"
-            src="https://www.vasamuseet.se/contentassets/a391b8401c2a468c8163445e696dbccf/kampanjpuff-2.jpg?w=1200">
-        </article>
       </div>
+    </section>
 
-      <div class="row gx-0">
-        <article class="col-sm-12 col-lg-6 noPading articleMain">
-          <img class="imgArticle"
-            src="https://www.vasamuseet.se/globalassets/vasamuseet/bilder/besok/audioguide/kvinna-lyssnar-pa-audioguide.jpg?w=1200">
-          <a class="aArticle center" href="https://www.vasamuseet.se/besok/audioguide" target="_self">
-            <div>
-              <span class="red">Lysnna</span>
-              <br> <br>
-              <h3><i class="fa fa-long-arrow-right"></i> Audioguider</h3>
-              <p class="text-secondary">Vasamuseet audioguider finns tillgängliga på flera språk och ladddas
-                ner i mobil eller surfplatta med hjälp av gratis trådlöst nätverk på museet.</p>
-            </div>
-          </a>
-        </article>
-        <article class="col-sm-12 col-lg-6 noPading articleMain">
-          <img class="imgArticle"
-            src="https://www.vasamuseet.se/globalassets/vasamuseet/bilder/besok/barn-och-familj/fyra-barn-pa-marsen-800-450-anneli-karlsson.jpg?w=1200">
-          <a class="aArticle center" href="https://www.vasamuseet.se/besok/barn/sommarlov" target="_self">
-            <div>
-              <span class="orange">Barn och familj</span>
-              <br> <br>
-              <h3><i class="fa fa-long-arrow-right"></i> Sommarlov</h3>
-              <p class="text-secondary">Välkommen till oss i sommar. Vi har roliga familjeaktiviteter hela
-                lovet.
-              </p>
-            </div>
-          </a>
-        </article>
-      </div>
+    <!--VM-1.5 Main Nav-->
+    <nav class="MainNav col-sm-12">
+      <a class="aMainNav text-uppercase" href="https://www.vasamuseet.se/besok/audioguide" target="_self">
+        <i class="fa fa-headphones" style="font-size:36px"></i>
+        <p>Audioguide</p>
+      </a>
+      <a class="aMainNav text-uppercase" href="https://www.vasamuseet.se/utforska/film" target="_blank">
+        <i class="fa fa-film" style="font-size:36px"></i>
+        <p>Film</p>
+      </a>
+      <a class="aMainNav text-uppercase" href="https://www.vasamuseet.se/utforska/vasamuseets-podd" target="_self">
+        <i class="fa fa-headphones" style="font-size:36px"></i>
+        <p>Podd</p>
+      </a>
+      <a class="aMainNav text-uppercase" href="https://www.vasamuseet.se/utforska/samlingar/sok-i-samlingen"
+        target="_blank">
+        <i class="fa fa-search" style="font-size:36px"></i>
+        <p>Sok i samlingen</p>
+      </a>
+    </nav>
 
-      <div class="row gx-0">
-        <article class="col-sm-12 col-lg-6 noPading articleMain">
-          <a class="aArticle center" href="https://www.vasamuseet.se/besok/utstallningar/tradgarden/upptack-tradgarden"
-            target="_self">
-            <div>
-              <h3><i class="fa fa-long-arrow-right"></i> Trädgården</h3>
-              <p class="text-secondary">Njut av historik grönska i museets trädgård. Fri entré.</p>
-            </div>
-          </a>
-          <img class="imgArticle"
-            src="https://www.vasamuseet.se/globalassets/vasamuseet/bilder/utstallningar/tradgarden/vasamuseets-tradgard-skylt.jpg?w=1200">
-        </article>
-        <article class="col-sm-12 col-lg-6 noPading articleMain">
-          <a class="aArticle center" href="https://www.vasamuseet.se/om-vasamuseet/vasamuseets-vanner" target="_self">
-            <div>
-              <h3><i class="fa fa-long-arrow-right"></i> Bli vän</h3>
-              <p class="text-secondary">Vasamuseets vänner stöttar museet och får ta del av spännande
-                aktiviteter.
-              </p>
-            </div>
-          </a>
-          <img class="imgArticle"
-            src="https://www.vasamuseet.se/globalassets/vasamuseet/bilder/vasamuseets-vanner/medlemskap-vasa-silver-och-guld.jpg?w=1200">
-        </article>
-      </div>
-
-      <div class="row gx-0">
-        <article class="col-sm-12 col-lg-6 noPading articleMain">
-          <img class="imgArticle"
-            src="https://www.vasamuseet.se/globalassets/vasamuseet/bilder/besok/restaurangen/kanelbulle-i-narbild.jpg?w=1200">
-          <a class="aArticle center" href="https://www.vasamuseet.se/besok/restaurangen" target="_self">
-            <div>
-              <span class="green">Restaurang</span>
-              <br> <br>
-              <h3><i class="fa fa-long-arrow-right"></i> Vasamuseets Restaurang</h3>
-              <p class="text-secondary">På Vasamuseet restaurang serveras kalla och varma drycker, luncher,
-                smörgåsar,
-                sallader och ett urval av
-                bullar och bakverk. All mat lagas från grunden med svenska råvafof och ecologiskt fokus.</p>
-            </div>
-          </a>
-        </article>
-        <article class="col-sm-12 col-lg-6 noPading articleMain">
-          <img class="imgArticle"
-            src="https://www.vasamuseet.se/globalassets/vasamuseet/bilder/besok/kalender/filmen/filmen-om-vasa-biosalong.jpg?w=1200">
-          <a class="aArticle center" href="https://www.vasamuseet.se/besok/filmen-om-vasa" target="_self">
-            <div>
-              <span class="red">Film</span>
-              <br> <br>
-              <h3><i class="fa fa-long-arrow-right"></i> Filmen om Vasa</h3>
-              <p class="text-secondary">Se filmen om hur skeppet byggdes, sjönk och sedan bärgades. Varje dag
-                i
-                museet.</p>
-            </div>
-          </a>
-        </article>
-      </div>
-
-      <div class="row gx-0">
-        <article class="col-sm-12 col-lg-6 noPading articleMain">
-          <a class="aArticle center" href="https://www.vasamuseet.se/besok/butik" target="_self">
-            <div>
-              <span class="green">Butik</span>
-              <br> <br>
-              <h3><i class="fa fa-long-arrow-right"></i> Vasamuseet butik</h3>
-              <p class="text-secondary">Vasamuseet butik har öppet alla dagar kl. 10-17. Här finns fina
-                presenter
-                och
-                souvenirer. De flesta av
-                våra produkter är unika för Vasamuseet, som replikerna på de föremål som hittades ombord.
-                Fri
-                entré.
-              </p>
-              <b class="text-secondary">Välkommen in!</b>
-            </div>
-          </a>
-          <img class="imgArticle"
-            src="https://www.vasamuseet.se/globalassets/vasamuseet/bilder/besok/butik/webbshop/skal-med-monster-fran-vasa-533-800.jpg?w=1200">
-        </article>
-        <article class="col-sm-12 col-lg-6 noPading articleMain">
-          <a class="aArticle center" href="https://www.vasamuseet.se/skola" target="_self">
-            <div>
-              <span class="lightRed">Skola</span>
-              <br> <br>
-              <h3><i class="fa fa-long-arrow-right"></i> För lärare</h3>
-              <p class="text-secondary">Välkommen till museet med din klass! Vi har kostnadsfria aktiviteter
-                för
-                grundskolan, gymnasiet,
-                SFI-utbildning och specialskolan.</p>
-            </div>
-          </a>
-          <img class="imgArticle"
-            src="https://www.vasamuseet.se/globalassets/vasamuseet/bilder/skola/barn-vid-10-delsmodellen-1000x656px.jpg?w=1200">
-        </article>
-      </div>
-
-      <!--VM-1.7 Main section SocialMedia-->
-      <section class="color-back">
-        <div class="row gx-0">
-          <div class="col-12">
-            <h2 class="header-main">#vasamuseet</h2>
+    <!--VM-1.6 Main articles-->
+    <div class="row gx-0">
+      <article class="col-sm-12 col-lg-6 noPading articleMain">
+        <a class="aArticle center" href="https://www.vasamuseet.se/besok" target="_self">
+          <div>
+            <h3><i class="fa fa-long-arrow-right"></i> Besök Vasamuseet</h3>
+            <p class="text-secondary">Här hittar du allt du behöver veta inför och under ditt besök på
+              Vasamuseet.
+              Vasamuseet har öppet
+              alla
+              dagar kl.8.30-18. Biljetten köpper du i entrén.</p>
+            <b class="text-secondary">Varmt välkommen till Vasamuseet!</b>
           </div>
+        </a>
+        <img class="imgArticle"
+          src="https://www.vasamuseet.se/globalassets/vasamuseet/bilder/besok/barn-och-familj/mork-bild-pa-vasa-spokskeppet.jpg?w=1200">
+      </article>
+      <article class="col-sm-12 col-lg-6 noPading articleMain">
+        <a class="aArticle center" href="https://www.vasamuseet.se/besok/two-museums-one-ticket" target="_self">
+          <div>
+            <h3><i class="fa fa-long-arrow-right"></i> Två museer på en biljett</h3>
+            <p class="text-secondary">I sommar kan du som besöker Vasamuseet också besöka Vrak med vår nya
+              bilijett för 290 kronor.</p>
+          </div>
+        </a>
+        <img class="imgArticle"
+          src="https://www.vasamuseet.se/contentassets/a391b8401c2a468c8163445e696dbccf/kampanjpuff-2.jpg?w=1200">
+      </article>
+    </div>
+
+    <div class="row gx-0">
+      <article class="col-sm-12 col-lg-6 noPading articleMain">
+        <img class="imgArticle"
+          src="https://www.vasamuseet.se/globalassets/vasamuseet/bilder/besok/audioguide/kvinna-lyssnar-pa-audioguide.jpg?w=1200">
+        <a class="aArticle center" href="https://www.vasamuseet.se/besok/audioguide" target="_self">
+          <div>
+            <span class="red">Lysnna</span>
+            <br> <br>
+            <h3><i class="fa fa-long-arrow-right"></i> Audioguider</h3>
+            <p class="text-secondary">Vasamuseet audioguider finns tillgängliga på flera språk och ladddas
+              ner i mobil eller surfplatta med hjälp av gratis trådlöst nätverk på museet.</p>
+          </div>
+        </a>
+      </article>
+      <article class="col-sm-12 col-lg-6 noPading articleMain">
+        <img class="imgArticle"
+          src="https://www.vasamuseet.se/globalassets/vasamuseet/bilder/besok/barn-och-familj/fyra-barn-pa-marsen-800-450-anneli-karlsson.jpg?w=1200">
+        <a class="aArticle center" href="https://www.vasamuseet.se/besok/barn/sommarlov" target="_self">
+          <div>
+            <span class="orange">Barn och familj</span>
+            <br> <br>
+            <h3><i class="fa fa-long-arrow-right"></i> Sommarlov</h3>
+            <p class="text-secondary">Välkommen till oss i sommar. Vi har roliga familjeaktiviteter hela
+              lovet.
+            </p>
+          </div>
+        </a>
+      </article>
+    </div>
+
+    <div class="row gx-0">
+      <article class="col-sm-12 col-lg-6 noPading articleMain">
+        <a class="aArticle center" href="https://www.vasamuseet.se/besok/utstallningar/tradgarden/upptack-tradgarden"
+          target="_self">
+          <div>
+            <h3><i class="fa fa-long-arrow-right"></i> Trädgården</h3>
+            <p class="text-secondary">Njut av historik grönska i museets trädgård. Fri entré.</p>
+          </div>
+        </a>
+        <img class="imgArticle"
+          src="https://www.vasamuseet.se/globalassets/vasamuseet/bilder/utstallningar/tradgarden/vasamuseets-tradgard-skylt.jpg?w=1200">
+      </article>
+      <article class="col-sm-12 col-lg-6 noPading articleMain">
+        <a class="aArticle center" href="https://www.vasamuseet.se/om-vasamuseet/vasamuseets-vanner" target="_self">
+          <div>
+            <h3><i class="fa fa-long-arrow-right"></i> Bli vän</h3>
+            <p class="text-secondary">Vasamuseets vänner stöttar museet och får ta del av spännande
+              aktiviteter.
+            </p>
+          </div>
+        </a>
+        <img class="imgArticle"
+          src="https://www.vasamuseet.se/globalassets/vasamuseet/bilder/vasamuseets-vanner/medlemskap-vasa-silver-och-guld.jpg?w=1200">
+      </article>
+    </div>
+
+    <div class="row gx-0">
+      <article class="col-sm-12 col-lg-6 noPading articleMain">
+        <img class="imgArticle"
+          src="https://www.vasamuseet.se/globalassets/vasamuseet/bilder/besok/restaurangen/kanelbulle-i-narbild.jpg?w=1200">
+        <a class="aArticle center" href="https://www.vasamuseet.se/besok/restaurangen" target="_self">
+          <div>
+            <span class="green">Restaurang</span>
+            <br> <br>
+            <h3><i class="fa fa-long-arrow-right"></i> Vasamuseets Restaurang</h3>
+            <p class="text-secondary">På Vasamuseet restaurang serveras kalla och varma drycker, luncher,
+              smörgåsar,
+              sallader och ett urval av
+              bullar och bakverk. All mat lagas från grunden med svenska råvafof och ecologiskt fokus.</p>
+          </div>
+        </a>
+      </article>
+      <article class="col-sm-12 col-lg-6 noPading articleMain">
+        <img class="imgArticle"
+          src="https://www.vasamuseet.se/globalassets/vasamuseet/bilder/besok/kalender/filmen/filmen-om-vasa-biosalong.jpg?w=1200">
+        <a class="aArticle center" href="https://www.vasamuseet.se/besok/filmen-om-vasa" target="_self">
+          <div>
+            <span class="red">Film</span>
+            <br> <br>
+            <h3><i class="fa fa-long-arrow-right"></i> Filmen om Vasa</h3>
+            <p class="text-secondary">Se filmen om hur skeppet byggdes, sjönk och sedan bärgades. Varje dag
+              i
+              museet.</p>
+          </div>
+        </a>
+      </article>
+    </div>
+
+    <div class="row gx-0">
+      <article class="col-sm-12 col-lg-6 noPading articleMain">
+        <a class="aArticle center" href="https://www.vasamuseet.se/besok/butik" target="_self">
+          <div>
+            <span class="green">Butik</span>
+            <br> <br>
+            <h3><i class="fa fa-long-arrow-right"></i> Vasamuseet butik</h3>
+            <p class="text-secondary">Vasamuseet butik har öppet alla dagar kl. 10-17. Här finns fina
+              presenter
+              och
+              souvenirer. De flesta av
+              våra produkter är unika för Vasamuseet, som replikerna på de föremål som hittades ombord.
+              Fri
+              entré.
+            </p>
+            <b class="text-secondary">Välkommen in!</b>
+          </div>
+        </a>
+        <img class="imgArticle"
+          src="https://www.vasamuseet.se/globalassets/vasamuseet/bilder/besok/butik/webbshop/skal-med-monster-fran-vasa-533-800.jpg?w=1200">
+      </article>
+      <article class="col-sm-12 col-lg-6 noPading articleMain">
+        <a class="aArticle center" href="https://www.vasamuseet.se/skola" target="_self">
+          <div>
+            <span class="lightRed">Skola</span>
+            <br> <br>
+            <h3><i class="fa fa-long-arrow-right"></i> För lärare</h3>
+            <p class="text-secondary">Välkommen till museet med din klass! Vi har kostnadsfria aktiviteter
+              för
+              grundskolan, gymnasiet,
+              SFI-utbildning och specialskolan.</p>
+          </div>
+        </a>
+        <img class="imgArticle"
+          src="https://www.vasamuseet.se/globalassets/vasamuseet/bilder/skola/barn-vid-10-delsmodellen-1000x656px.jpg?w=1200">
+      </article>
+    </div>
+
+    <!--VM-1.7 Main section SocialMedia-->
+    <section class="color-back">
+      <div class="row gx-0">
+        <div class="col-12">
+          <h2 class="header-main">#vasamuseet</h2>
         </div>
-        <div class="row gx-0 padd">
-          <div class="SocMedia">
-            <div class="col-4 img-item flex-fill pos-relat">
-              <a href="https://www.vasamuseet.se/vasa-i-sociala-kanaler#instagram" class="image">
-                <i class="fa-brands fa-instagram pos-abs color-icon"></i>
-                <img class="img-hight"
-                  src="https://scontent-arn2-1.cdninstagram.com/v/t51.2885-15/292290883_538123621372505_8330388268229603012_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=aCJSznmzOlgAX9RAOaG&_nc_ht=scontent-arn2-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT_fRMX8yd3edZIs3zMGOr0o_jD5gmsXviFwPyD3aoQx9w&oe=62DE8CAB"
-                  alt="">
-              </a>
-            </div>
-
-            <div class="col-4 img-item flex-fill pos-relat">
-              <a href="https://www.vasamuseet.se/vasa-i-sociala-kanaler#youtube">
-                <i class="fa-brands fa-youtube pos-abs color-icon"></i>
-                <img class="img-hight" src="https://i.ytimg.com/vi/v9Vp789icKs/hqdefault.jpg" alt="">
-              </a>
-            </div>
-
-            <div class="col-4 img-item flex-fill pos-relat">
-              <a href="https://www.vasamuseet.se/vasa-i-sociala-kanaler#instagram">
-                <i class="fa-brands fa-instagram pos-abs color-icon"></i>
-                <img class="img-hight"
-                  src="https://scontent-arn2-1.cdninstagram.com/v/t51.2885-15/291178337_138103382224501_1992354702197373831_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=O9MVVO3RoOUAX-WxyC_&_nc_ht=scontent-arn2-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT8RnqO-CwH7eqdxn1roS5F6o5HbbF9OBhcJcPOWnQ_AZQ&oe=62DE0FEE"
-                  alt="">
-              </a>
-            </div>
+      </div>
+      <div class="row gx-0 padd">
+        <div class="SocMedia">
+          <div class="col-4 img-item flex-fill pos-relat">
+            <a href="https://www.vasamuseet.se/vasa-i-sociala-kanaler#instagram" class="image">
+              <i class="fa-brands fa-instagram pos-abs color-icon"></i>
+              <img class="img-hight"
+                src="https://scontent-arn2-1.cdninstagram.com/v/t51.2885-15/292290883_538123621372505_8330388268229603012_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=aCJSznmzOlgAX9RAOaG&_nc_ht=scontent-arn2-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT_fRMX8yd3edZIs3zMGOr0o_jD5gmsXviFwPyD3aoQx9w&oe=62DE8CAB"
+                alt="">
+            </a>
           </div>
 
-          <div class="SocMedia">
-            <div class="col-4 img-item flex-fill pos-relat">
-              <a href="https://www.vasamuseet.se/vasa-i-sociala-kanaler#instagram">
-                <i class="fa-brands fa-instagram pos-abs color-icon"></i>
-                <img class="img-hight"
-                  src="https://scontent-arn2-1.cdninstagram.com/v/t51.29350-15/289643661_734556820913395_6474931976277377470_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=MWOiahLNezgAX9HKYfs&_nc_oc=AQmVDRmZFfM3GETyalWE4GeRvwrUIY1OWU5Fl5j0uIUkPK2vHGyCohXR0vqJ7dPypppQUic_scSmx9kVnH47JOA-&_nc_ht=scontent-arn2-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT9DDTrYlF6A3m4zVXY_5KQSex2ihvU35U3F6BeiJtD6Rg&oe=62DDD4F9"
-                  alt="">
-              </a>
-            </div>
-
-            <div class="col-4 img-item flex-fill pos-relat">
-              <a href="https://www.vasamuseet.se/vasa-i-sociala-kanaler#instagram">
-                <i class="fa-brands fa-instagram pos-abs color-icon"></i>
-                <img class="img-hight"
-                  src="https://scontent-arn2-2.cdninstagram.com/v/t51.29350-15/288363947_728976464982377_408157875513017438_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=mhISSfHMxlsAX8UwuIe&_nc_ht=scontent-arn2-2.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT8nZ_0r889ELWpy9Hkp46doEA3Ezoke-Ml4IaVOkjscMw&oe=62DD787B"
-                  alt="">
-              </a>
-            </div>
-
-            <div class="col-4 img-item flex-fill pos-relat">
-              <a href="https://www.vasamuseet.se/vasa-i-sociala-kanaler#instagram">
-                <i class="fa-brands fa-instagram pos-abs color-icon"></i>
-                <img class="img-hight"
-                  src="https://scontent-arn2-1.cdninstagram.com/v/t51.29350-15/287751954_586610209553038_8760067909135896401_n.webp?stp=dst-jpg&_nc_cat=104&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=wMI9Mdqa4EMAX_dYxDd&_nc_ht=scontent-arn2-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT9m1_nLYDtDIwbzIo2I2zVUIb-8HeCUarMpMj1NWGVesg&oe=62DE9943"
-                  alt="">
-              </a>
-            </div>
+          <div class="col-4 img-item flex-fill pos-relat">
+            <a href="https://www.vasamuseet.se/vasa-i-sociala-kanaler#youtube">
+              <i class="fa-brands fa-youtube pos-abs color-icon"></i>
+              <img class="img-hight" src="https://i.ytimg.com/vi/v9Vp789icKs/hqdefault.jpg" alt="">
+            </a>
           </div>
-        </div>
 
-        <div class="container-fluid">
-          <div class="d-grid gap-2 col-6 button-center">
-            <a href="https://www.vasamuseet.se/vasa-i-sociala-kanaler">
-              <button class="btn btn-primary color-button" type="button">Visa mer från Basa i social
-                medier</button>
+          <div class="col-4 img-item flex-fill pos-relat">
+            <a href="https://www.vasamuseet.se/vasa-i-sociala-kanaler#instagram">
+              <i class="fa-brands fa-instagram pos-abs color-icon"></i>
+              <img class="img-hight"
+                src="https://scontent-arn2-1.cdninstagram.com/v/t51.2885-15/291178337_138103382224501_1992354702197373831_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=O9MVVO3RoOUAX-WxyC_&_nc_ht=scontent-arn2-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT8RnqO-CwH7eqdxn1roS5F6o5HbbF9OBhcJcPOWnQ_AZQ&oe=62DE0FEE"
+                alt="">
             </a>
           </div>
         </div>
-      </section>
-    </main>
 
-    <script src="https://kit.fontawesome.com/3ce877ebb2.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://kit.fontawesome.com/accd96e367.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
-    </script>
-    <script src="https://kit.fontawesome.com/4ff0e8cb84.js" crossorigin="anonymous"></script>
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <div class="SocMedia">
+          <div class="col-4 img-item flex-fill pos-relat">
+            <a href="https://www.vasamuseet.se/vasa-i-sociala-kanaler#instagram">
+              <i class="fa-brands fa-instagram pos-abs color-icon"></i>
+              <img class="img-hight"
+                src="https://scontent-arn2-1.cdninstagram.com/v/t51.29350-15/289643661_734556820913395_6474931976277377470_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=MWOiahLNezgAX9HKYfs&_nc_oc=AQmVDRmZFfM3GETyalWE4GeRvwrUIY1OWU5Fl5j0uIUkPK2vHGyCohXR0vqJ7dPypppQUic_scSmx9kVnH47JOA-&_nc_ht=scontent-arn2-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT9DDTrYlF6A3m4zVXY_5KQSex2ihvU35U3F6BeiJtD6Rg&oe=62DDD4F9"
+                alt="">
+            </a>
+          </div>
+
+          <div class="col-4 img-item flex-fill pos-relat">
+            <a href="https://www.vasamuseet.se/vasa-i-sociala-kanaler#instagram">
+              <i class="fa-brands fa-instagram pos-abs color-icon"></i>
+              <img class="img-hight"
+                src="https://scontent-arn2-2.cdninstagram.com/v/t51.29350-15/288363947_728976464982377_408157875513017438_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=mhISSfHMxlsAX8UwuIe&_nc_ht=scontent-arn2-2.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT8nZ_0r889ELWpy9Hkp46doEA3Ezoke-Ml4IaVOkjscMw&oe=62DD787B"
+                alt="">
+            </a>
+          </div>
+
+          <div class="col-4 img-item flex-fill pos-relat">
+            <a href="https://www.vasamuseet.se/vasa-i-sociala-kanaler#instagram">
+              <i class="fa-brands fa-instagram pos-abs color-icon"></i>
+              <img class="img-hight"
+                src="https://scontent-arn2-1.cdninstagram.com/v/t51.29350-15/287751954_586610209553038_8760067909135896401_n.webp?stp=dst-jpg&_nc_cat=104&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=wMI9Mdqa4EMAX_dYxDd&_nc_ht=scontent-arn2-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT9m1_nLYDtDIwbzIo2I2zVUIb-8HeCUarMpMj1NWGVesg&oe=62DE9943"
+                alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="d-grid gap-2 col-6 button-center">
+          <a href="https://www.vasamuseet.se/vasa-i-sociala-kanaler">
+            <button class="btn btn-primary color-button" type="button">Visa mer från Basa i social
+              medier</button>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!--VM-1.8 Footer nav-->
+    <nav class="MainNav">
+      <a class="aMainNav" href="https://sv-se.facebook.com/Vasamuseet/" target="_blank">
+        <span class="fa fa-facebook-official" style="font-size:36px"></span>
+        <br>
+        <p>Facebook</p>
+      </a>
+      <a class="aMainNav" href="https://www.instagram.com/vasamuseet/" target="_blank">
+        <span class="fa fa-instagram" style="font-size:36px"></span>
+        <br>
+        <p>Instagram</p>
+      </a>
+      <a class="aMainNav" href="hhttps://twitter.com/thevasamuseum" target="_blank">
+        <span class="fa fa-twitter" style="font-size:36px"></span>
+        <br>
+        <p>Twitter</p>
+      </a>
+      <a class="aMainNav" href="https://www.youtube.com/channel/UCOpOsd0xVzgZAys0jF5dZfQ" target="_blank">
+        <span class="fa fa-youtube-play" style="font-size:36px"></span>
+        <br>
+        <p>Youtube</p>
+      </a>
+    </nav>
+    <!--VM-1.9 Footer contacts-->
+    <div class="FooterContacts">
+      <section class="col-6 col-md-3">
+        <a class="grey" href="https://www.vasamuseet.se/om-vasamuseet/kontakta-vasamuseet" target="_self">
+          <span class="fa fa-envelope" style="font-size:36px"></span>
+          <br>
+          <h4><span class="fa fa-arrow-right" style="font-size:16px"></span> Kontakta oss</h4>
+        </a>
+        <br><br><br><br>
+        <section>
+          <h4>Vasamuseets besöksforum</h4>
+          <p class="pFooter">Ställ frågor och hjälp oss med förslag och idéer!</p>
+          <a class="aFooterContacts" href="https://forum.vasamuseet.se/org/vasamuseet/" target="_self"><span
+              class="fa fa-arrow-right"></span> Besök forumet (extern länk)</a>
+        </section>
+      </section>
+      <section class="col-6 col-md-3 grey">
+        <span class="fa fa-home" style="font-size:42px"></span>
+        <br>
+        <h4>Adress</h4>
+        <p class="pFooter">Galärvarvsvägen 14 <br> Stockholm</p>
+      </section>
+      <section class="col-6 col-md-3 text-start upPadding">
+        <h4 class="grey">Webbplatsen</h4>
+        <a class="aFooterContacts" href="https://www.vasamuseet.se/om-webbplatsen/webbkarta"
+          target="_self">Webbkarta</a> <br>
+        <a class="aFooterContacts" href="https://www.vasamuseet.se/om-webbplatsen/tillganglighetsredogorelse"
+          target="_self">Tillgänglighetsredogörelse</a><br>
+        <a class="aFooterContacts" href="https://www.vasamuseet.se/om-webbplatsen/om-webbplatsen" target="_self">Om
+          webbplatsen</a><br>
+        <a class="aFooterContacts" href="https://www.vasamuseet.se/om-webbplatsen/cookies"
+          target="_self">Cookies</a><br>
+        <a class="aFooterContacts" href="https://www.vasamuseet.se/om-vasamuseet/behandling-av-personuppgifter"
+          target="_self">Behandling av personuppgifter</a>
+      </section>
+      <section class="col-6 col-md-3 text-start upPadding">
+        <h4 class="grey">Genvägar</h4>
+        <a class="aFooterContacts" href="https://www.vasamuseet.se/om-vasamuseet/pressrum" target="_self">Press</a> <br>
+        <a class="aFooterContacts" href="https://www.vasamuseet.se/om-vasamuseet/bransch" target="_self">Bransch</a><br>
+        <a class="aFooterContacts" href="https://www.smtm.se/om-myndigheten/visselblasartjanst"
+          target="_blank">Visselblåsartjänst</a>
+      </section>
+    </div>
+
+    <!--VM-1.10 Footer Cooperation-->
+    <div class="end">
+      <div class="top-line">
+        <p>
+          Vasamuseet, Stockholm - En del av
+          <a class="partners-link" href="https://www.smtm.se/">Statens maritima och transporthistoriska museer
+          </a>
+        </p>
+      </div>
+      <div class="partners">
+        <div class="row">
+          <div class="partners-block col-md-12 col-xl-2">
+            <a href="https://www.marinmuseum.se/">
+              <img src="src/Marin.png" alt="Marinmuseums logotyp" class="partners-logo" />
+            </a>
+          </div>
+          <div class="partners-block col-md-12 col-xl-2">
+            <a href="https://www.sjohistoriska.se/">
+              <img src="src/sjohistoriska_logo.png" alt="Marinmuseums logotyp"
+                class="partners-logo partners-logo-bottom" />
+            </a>
+          </div>
+          <div class="partners-block col-md-12 col-xl-2">
+            <a href="https://www.vasamuseet.se/">
+              <img src="src/vasamuseet-logotyp.png" alt="Marinmuseums logotyp" class="partners-logo" />
+            </a>
+          </div>
+
+          <div class="partners-block col-md-12 col-xl-2">
+            <a href="https://www.vrak.se/">
+              <img src="src/Vrak_logo.png" alt="Marinmuseums logotyp" class="partners-logo partners-logo-bottom" />
+            </a>
+          </div>
+          <div class="partners-block col-md-12 col-xl-2">
+            <a href="https://www.jarnvagsmuseet.se/">
+              <img src="src/jarnvagsmuseet-logotyp.svg" alt="Marinmuseums logotyp"
+                class="partners-logo partners-logo-bottom" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/3ce877ebb2.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/accd96e367.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+  </script>
+  <script src="https://kit.fontawesome.com/4ff0e8cb84.js" crossorigin="anonymous"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </body>
 
 </html>
