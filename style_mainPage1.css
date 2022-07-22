@@ -254,7 +254,7 @@
     color: #555;
 }
 
-color-back {
+.color-back {
     background-color: var(--background-color);
 }
 
