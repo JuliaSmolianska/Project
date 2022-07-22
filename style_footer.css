@@ -90,3 +90,10 @@
   .partners-logo-bottom {
     padding-top: 30px;
   }
+  
+@media screen and (max-width: 1200px) {
+  .partners-block {
+    padding: 10px;
+    height: 70px;
+  }
+}

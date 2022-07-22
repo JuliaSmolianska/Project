@@ -87,6 +87,16 @@
     border-left: 1px solid var(--grey-color);
 }
 
+@media screen and (max-width: 992px) {
+    #bord-left {
+        border-top: 1px solid var(--grey-color);
+        border-left: 0;
+        padding-top: 3%;
+        margin-top: 3%;
+    }
+}
+
+
 .padding {
     padding-top: 5%;
     padding-bottom: 5%;
@@ -98,7 +108,7 @@
 }
 
 .f-size {
-    font-size: 1.5em
+    font-size: 1.3em
 }
 
 .MainNav {
@@ -308,13 +318,13 @@
 
 .button-center {
     width: 100%;
-    padding: 50px 100px;
+    padding: 50px 10px;
     justify-content: center;
     margin-right: 0;
 }
 
 .color-button {
-    padding: 5px 50px 5px 50px;
+    padding: 5px 20px;
     background-color: var(--gold-but-color);
     border-radius: 0;
     border: 0;
@@ -325,7 +335,7 @@
     border: 2px solid var(--black-color);
 }
 
-@media only screen and (max-width: 976px) {
+@media only screen and (max-width: 992px) {
     .SocMedia {
         width: 100%;
         padding-left: 10%;
