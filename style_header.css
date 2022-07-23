@@ -10,7 +10,7 @@
 .button-menu-aside {
     width: 70px;
     background: rgb(51, 51, 51);
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .button-close {
@@ -136,6 +136,7 @@ header {
 
 .navbar-first__hide {
     margin-bottom: 0px;
+    height: 60px;
 }
 
 @media screen and (max-width: 990px) {
