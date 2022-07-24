@@ -26,6 +26,10 @@
     text-decoration: underline;
     font-family: Georgia, 'Times New Roman', Times, serif;
   }
+
+  .aFooterContacts:hover {
+    color: #1a1930;
+  }
   
   .pFooter {
     font-size: 16px;

@@ -10,6 +10,10 @@
     --background-color-icon: rgb(205, 205, 200);
 }
 
+.marginMain {
+    margin-top: 115px;
+  }
+
 .img-main {
     width: 100%;
     position: relative;
