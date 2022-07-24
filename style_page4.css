@@ -1,0 +1,44 @@
+.page4 {
+    position: relative;
+    width: 100%;
+    height: 600px;
+  }
+  
+  .textPage4 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    height: 100px;
+  }
+  
+  .imgPage4 { 
+    width: 100%;
+    height: 600px;
+  }
+  
+  .element {
+    margin: auto 15px;
+  }
+  
+  .paddingP4 {
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+  
+  .textP4 {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  @media screen and (min-width: 750px) {
+    .textP4 {
+      width: 750px;
+    }
+  }
+  
+  .f-zPage4 {
+    font-size: 20px;
+  }
