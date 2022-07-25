@@ -136,6 +136,7 @@ header {
 
 .navbar-first__hide {
     margin-bottom: 0px;
+    height: 60px;
 }
 
 @media screen and (max-width: 990px) {
