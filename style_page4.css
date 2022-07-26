@@ -18,6 +18,14 @@
     width: 100%;
     height: 600px;
   }
+
+  .center4 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
   
   .element {
     margin: auto 15px;
