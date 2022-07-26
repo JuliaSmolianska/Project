@@ -3,16 +3,15 @@
 }
 
 :root {
-  --background-color-text1: rgb(3, 111, 162);
-  --background-color-text2: rgb(136, 70, 150);
-  --color-text: rgb(85, 85, 85);
+  --background-color-text1: rgb(122, 18, 20);
+  --background-colortext-hed: rgb(51, 51, 51);
   --white-color: white;
   --red-but-color: rgb(107, 28, 28);
-  --background-color-text: rgb(51,51,51);
+  --color-text: rgb(85, 85, 85);
 }
 
-.padding3 {
-  padding-top: 140px;
+.padding6 {
+  padding-top: 130px;
 }
 
 .main-header,
@@ -49,16 +48,8 @@
   font-size: 1.6rem;
 }
 
-.butt-I {
-  position: fixed;
-  top: 50%;
-  right: 2%;
-  background-color: var(--red-but-color);
-  width: 80px;
-  height: 80px;
-  font-size: 3em;
-  border-radius: 5%;
-  color: var(--white-color);
+.margin-main {
+  margin: 5%;
 }
 
 .content {
@@ -70,7 +61,11 @@
   display: flex;
   flex-direction: column;
   width: 33.33%;
-  padding: 2px;
+  padding: 10px;
+}
+
+.blok-item {
+  flex-basis: 66.66%;
 }
 
 .dec-none {
@@ -88,7 +83,7 @@
   top: 0;
 }
 
-.img-hight3 {
+.img-hight6 {
   height: 260px;
   width: 100%;
   object-fit: cover;
@@ -101,22 +96,15 @@
   left: 15px;
 }
 
-.text1-2 {
+.text1 {
   padding: 5px;
   color: var(--white-color);
   text-align: center;
-}
-
-.text1 {
   background-color: var(--background-color-text1);
 }
 
-.text2 {
-  background-color: var(--background-color-text2);
-}
-
-.text-img {
-  background-color: var(--background-color-text);
+.text-hed {
+  background-color: var(--background-colortext-hed);
   font-size: 0.5em;
   height: 52px;
   width: 100%;
@@ -125,7 +113,6 @@
 }
 
 .color-icon1 {
-  height: ;
   color: var(--white-color);
 }
 
@@ -136,11 +123,5 @@
 
   .content div {
     width: 100%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .butt-I {
-    display: none;
   }
 }
