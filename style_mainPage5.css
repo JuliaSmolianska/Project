@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  color: var(--color-text)
 }
 
 :root {
@@ -33,6 +32,7 @@
 }
 .padding5 {
   padding-top: 140px;
+  color: var(--color-text)
 }
 
 .cont-left,.cont-rigth {
