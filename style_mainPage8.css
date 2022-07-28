@@ -1,0 +1,79 @@
+.marginMain8 {
+    margin: 150px 3% 15px;
+  }
+  
+  .paddingP8 {
+    padding-left: 10px;
+  }
+  
+  .f-zPage8 {
+  font-size: 20px;
+  }
+  
+  .center8 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .page8 {
+    display: block;
+    margin-top: 20px;
+  }
+  
+  .page8Box {
+    width: 100%;
+    height: 335px;
+    padding: 5px;
+    margin: 0;
+    justify-content: center;
+  }
+  
+  .apage8 {
+    text-decoration: none;
+  }
+  
+  .page8Box:hover {
+    border: 2px solid #3b386e;
+    display: block;
+    margin: 0;
+  }
+  
+  .textPage8 {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    height: 60px;
+  }
+  
+  .imgPage8 { 
+    width: 100%;
+    height: 260px;
+  }
+  
+  .element {
+    margin: auto 15px;
+  }
+  
+  @media screen and (min-width: 750px) {
+    .marginMain8 {
+      margin: 150px 10% 15px;
+    }
+    .page8Box {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (min-width: 976px) {
+    .marginMain8 {
+      margin: 150px 3% 15px;
+    }
+    .page8 {
+      display: flex;
+    }
+    .page8Box {
+      width: 33%;
+    }
+  }
